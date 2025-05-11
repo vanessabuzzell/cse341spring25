@@ -6,18 +6,21 @@
       "favoriteColor": "pink",
       "birthday": "01/01/10"
     },
+    
     "contact2": {
       "firstName": "joshua",
-      "lastName": "buzz",
+      "lastName": "buzzell",
       "email": "joshua@test.com",
       "favoriteColor": "blue",
       "birthday": "01/2/10"
     },
+
     "contact3": {
       "firstName": "harper",
-      "lastName": "ell",
+      "lastName": "buzzell",
       "email": "harper@test.com",
       "favoriteColor": "purple",
       "birthday": "01/03/10"
     }
+
 }
