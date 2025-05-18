@@ -11,32 +11,37 @@ GET http://localhost:8080/contacts/682010159a85590ba5bdb338
 ###
 GET http://localhost:8080/contacts/682010159a85590ba5bdb339
 
-### Create contact 
+###
+GET http://localhost:8080/contacts/68202ecd9a85590ba5bdb33e
+
+### Create contact 68202ecd9a85590ba5bdb33e
  
 POST http://localhost:8080/contacts HTTP/1.1 content-type: application/json
 {
-"firstName":"Ashley", 
-"lastName":"Weaver", 
-"email":"aWeaver@test.com", 
-"favoriteColor":"Brown", 
-"birthday":"06/19/2000"
+"contact": {
+      "firstName": "vanessa",
+      "lastName": "Buzzell",
+      "email": "vanessa@test.com",
+      "favoriteColor": "yellow",
+      "birthday": "01/01/10"
+    }
 }
 ### PUT contact 
-PUT http://localhost:8080/contacts/6220bcb39cd507e920c75a0b HTTP/1.1 content-type: application/json
+PUT http://localhost:8080/contacts/682010159a85590ba5bdb337 HTTP/1.1 content-type: application/json
 
 {
-"firstName":"Sarah", 
-"lastName":"Birch", 
-"email":"test@gmail.com", 
-"favoriteColor":"Green", 
-"birthday":"12/12/20"
+    "firstName": "vanessa",
+    "lastName": "Buzzell",
+    "email": "vanessa@test.com",
+    "favoriteColor": "yellow",
+    "birthday": "01/01/10"
 } 
 ### DELETE contact 
 DELETE http://localhost:8080/contacts/6220b775099269ff7b31ceab HTTP/1.1
 
 // PRODUCTION Deploy 
 ### Get all contacts 
-GET https://spring25-d71612e64481.herokuapp.com/contacts
+GET https://spring25.herokuapp.com/contacts
 
 ### Get contact by id 
 GET https://spring25-d71612e64481.herokuapp.com/contacts/622023f642f9ab4cd6e060b3
